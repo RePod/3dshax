@@ -1,4 +1,4 @@
 # 3dshax
 Just a website.
 
-Check out the [gh-pages branch](//github.com/RePod/3dshax/tree/gh-pages) instead.
+[See it live.](//repod.github.io/3dshax) (*gh-pages* branch)

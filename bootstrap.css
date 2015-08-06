@@ -1,0 +1,35 @@
+body { background-color:#45afff; }
+
+.container { padding: 20px 0px; }
+
+/*
+
+    Menu stuff.
+
+*/
+#hb_menu { max-width:270px; margin-bottom:5px; }
+
+#menu { width:100%; }
+#menu img {
+    display:inline-block;
+    border:3px solid #e1e1e1;
+    border-radius:10px;
+}
+.btn { text-align:left; }
+.btn > span { display:inline-block; vertical-align:top; padding:0px 5px; }
+
+.btn { color:#767676; }
+
+.name {
+    font-weight:bold;
+}
+.name2 {
+    font-size:x-small;
+}
+
+.firmware {
+    position:absolute;
+    bottom:2px;
+    right:5px;
+    font-size:x-small;
+}
