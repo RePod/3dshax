@@ -33,3 +33,10 @@ body { background-color:#0084ff; }
     right:5px;
     font-size:x-small;
 }
+
+.bad_browser {
+    border-color:red !important;
+}
+.good_browser {
+    border-color:#00D400 !important;
+}
