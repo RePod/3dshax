@@ -1,12 +1,13 @@
 body { background-color:#0084ff; }
 
-.container { padding: 20px 0px; }
+.container { padding-top: 20px; }
 
 /*
 
     Menu stuff.
 
 */
+#menu_hold { margin-bottom:1em; }
 #hb_menu { max-width:270px; margin-bottom:5px; }
 
 #menu { width:100%; }
@@ -15,7 +16,7 @@ body { background-color:#0084ff; }
     border:3px solid #e1e1e1;
     border-radius:10px;
 }
-.btn { min-width:270px; text-align:left; display:inline-block; }
+.btn { min-width:200px; text-align:left; display:inline-block; }
 .btn > span { display:inline-block; vertical-align:top; padding:0px 5px; }
 
 .btn { color:#767676; }
