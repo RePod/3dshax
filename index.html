@@ -11,7 +11,7 @@
 
         <!-- CSS -->
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" />
-        <link rel="stylesheet" href="bootstrap.css" />
+        <link rel="stylesheet" href="bootstrap_vert.css" />
 
         <!-- Javascript -->
         <script type="text/javascript" src="//code.jquery.com/jquery-1.11.2.min.js"></script>
@@ -22,27 +22,19 @@
     <body>
         <div class="container">
             <div class="row">
-                <div class="col-md-3" style="text-align:center">
+                <div class="col-md-12" style="text-align:center"> <!-- if col-md-3 use vertical -->
                     <img id="hb_menu" src='images/top_blank.png' alt="The Homebrew Launcher" />
-                    <div id="menu" class="btn-group-vertical" role="group" aria-label="...">
-                        <a id="m_cubic" href="#cubic" type="button" class="btn btn-default">
-                            <img src="//i.imgur.com/IK6CQhC.png" alt="Cubic Ninja" />
-                            <span>
-                                <div class='name'>Cubic Ninja</div>
-                                <div class='name2'>Ninjhax</div>
-                                <div class='firmware'>Any 3DS, firmware 4.0 - 9.2</div>
-                            </span>
-                        </a>
-                        <a id="m_cubic2" href="#cubic2" type="button" class="btn btn-default">
-                            <img src="//i.imgur.com/IK6CQhC.png" alt="Cubic Ninja" />
-                            <span>
-                                <div class='name'>Cubic Ninja</div>
-                                <div class='name2'>Ninjhax 2</div>
-                                <div class='firmware'>Any 3DS, firmware 9.0 - 9.9</div>
-                            </span>
-                        </a>
-                        <!--
-                        <a id="m_ocarina" href="#ocarina" type="button" class="btn btn-default">
+                    <!--
+                        We have to dupe the menu here for a responsive design.
+                        The good news is it works, maybe.
+                        
+                        The other good news is the actual menu contents (all the 'a' elements) can be duped 1:1.
+                    -->
+                    
+                    <!--
+                        OoT currently unused.
+                    
+                        <a href="#ocarina" type="button" class="m_ocarina btn btn-default">
                             <img src="//i.imgur.com/vyNSzex.png" alt="Ocarina of Time" />
                             <span>
                                 <div class='name'>Ocarina of Time</div>
@@ -50,8 +42,50 @@
                                 <div class='firmware'>?</div>
                             </span>
                         </a>
-                        -->
-                        <a id="m_ironfall" href="#ironfall" type="button" class="btn btn-default">
+                    -->
+                    
+                    <div class="menu menu_h btn-group hidden-xs hidden-sm" role="group" aria-label="..."> <!-- -vertical -->
+                        <a id="m_cubic" href="#cubic" type="button" class="btn btn-default">
+                            <img src="//i.imgur.com/IK6CQhC.png" alt="Cubic Ninja" />
+                            <span>
+                                <div class='name'>Cubic Ninja</div>
+                                <div class='name2'>Ninjhax</div>
+                                <div class='firmware'>Any 3DS, firmware 4.0 - 9.2</div>
+                            </span>
+                        </a><a id="m_cubic2" href="#cubic2" type="button" class="btn btn-default">
+                            <img src="//i.imgur.com/IK6CQhC.png" alt="Cubic Ninja" />
+                            <span>
+                                <div class='name'>Cubic Ninja</div>
+                                <div class='name2'>Ninjhax 2</div>
+                                <div class='firmware'>Any 3DS, firmware 9.0 - 9.9</div>
+                            </span>
+                        </a><a id="m_ironfall" href="#ironfall" type="button" class="btn btn-default">
+                            <img src="//i.imgur.com/4YhTyrh.png" alt="Ironfall Invasion" />
+                            <span>
+                                <div class='name'>Ironfall Invasion</div>
+                                <div class='name2'>Ironhax</div>
+                                <div class='firmware'>Any 3DS, firmware 9.5+</div>
+                            </span>
+                        </a>
+                    </div>
+                    
+                    <!-- Vertical menu for -xs and -sm -->
+                    <div class="menu btn-group-vertical hidden-md hidden-lg" role="group" aria-label="...">
+                        <a id="m_cubic" href="#cubic" type="button" class="btn btn-default">
+                            <img src="//i.imgur.com/IK6CQhC.png" alt="Cubic Ninja" />
+                            <span>
+                                <div class='name'>Cubic Ninja</div>
+                                <div class='name2'>Ninjhax</div>
+                                <div class='firmware'>Any 3DS, firmware 4.0 - 9.2</div>
+                            </span>
+                        </a><a id="m_cubic2" href="#cubic2" type="button" class="btn btn-default">
+                            <img src="//i.imgur.com/IK6CQhC.png" alt="Cubic Ninja" />
+                            <span>
+                                <div class='name'>Cubic Ninja</div>
+                                <div class='name2'>Ninjhax 2</div>
+                                <div class='firmware'>Any 3DS, firmware 9.0 - 9.9</div>
+                            </span>
+                        </a><a id="m_ironfall" href="#ironfall" type="button" class="btn btn-default">
                             <img src="//i.imgur.com/4YhTyrh.png" alt="Ironfall Invasion" />
                             <span>
                                 <div class='name'>Ironfall Invasion</div>
@@ -61,27 +95,20 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-md-9 panel">
+                <!--
+                <div class="col-md-9 panel"><div class="panel-body"></div></div>
+                -->
+            </div><br>
+            <div class="row" style="width:80%; max-width:80%; margin:auto;">
+                <div class="col-md-12 panel">
                     <div class="panel-body">
-                        Something could go here.<br>
-                        <br>
-                        Either the site breaks off into multiple pages (easy) or functions on one page and swaps out content via javascript (flexible, jQuery).<br>
-                        <br>
-                        We're already using Bootstrap which degrades as intended in the 3DS' browser.<br>
-                        <br>
-                        Something could go here.<br>
-                        <br>
-                        Either the site breaks off into multiple pages (easy) or functions on one page and swaps out content via javascript (flexible, jQuery).<br>
-                        <br>
-                        We're already using Bootstrap which degrades as intended in the 3DS' browser.<br>
-                        <br>
-                        Something could go here.<br>
-                        <br>
-                        Either the site breaks off into multiple pages (easy) or functions on one page and swaps out content via javascript (flexible, jQuery).<br>
-                        <br>
-                        We're already using Bootstrap which degrades as intended in the 3DS' browser.<br>
+                        Content here!
                     </div>
                 </div>
+            </div>
+            
+            <div style="text-align:center">
+                <a href="index.html" class="btn-sm btn-default">Vertical, Single Column</a> <a href="alt.html" class="btn-sm btn-default">Horizontal, Double Column</a>
             </div>
         </div>
     </body>
