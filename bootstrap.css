@@ -7,19 +7,18 @@ body { background-color:#0084ff; }
     Menu stuff.
 
 */
-#menu_hold { margin-bottom:1em; }
-#hb_menu { max-width:270px; margin-bottom:5px; }
+#menu_hold { padding-bottom:20px; }
+#hb_menu { max-width:290px; margin-bottom:5px; display:inline-block; }
 
 #menu { width:100%; }
 #menu img {
     display:inline-block;
     border:3px solid #e1e1e1;
-    border-radius:10px;
+    background-color: #e1e1e1;
+    border-radius:6px;
 }
-.btn { min-width:200px; text-align:left; display:inline-block; }
+.btn { color:#767676; min-width:200px; text-align:left; display:block; }
 .btn > span { display:inline-block; vertical-align:top; padding:0px 5px; }
-
-.btn { color:#767676; }
 
 .name {
     font-weight:bold;
@@ -37,7 +36,9 @@ body { background-color:#0084ff; }
 
 .bad_browser {
     border-color:red !important;
+    background-color:red !important;
 }
 .good_browser {
     border-color:#00D400 !important;
+    background-color:#00D400 !important;
 }
