@@ -8,7 +8,7 @@ body { background-color:#0084ff; }
 
 */
 #menu_hold { padding-bottom:20px; }
-#hb_menu { max-width:290px; margin-bottom:5px; display:inline-block; }
+#hb_menu { max-width:100%; margin-bottom:5px; display:inline-block; }
 
 #menu { width:100%; }
 #menu img {
