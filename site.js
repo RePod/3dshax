@@ -13,7 +13,7 @@ $(document).ready(function() {
     if (THREEDS) {
         var browser_ver = parseFloat(UA.match(/Version\/([\d\.]+)\./).pop());
 
-        $("a[id^='m_']").find("img").addClass("bad_browser");
+        $("#menu > a[id^='m_']").find("img").addClass("bad_browser");
 
         if (browser_ver < 1.7585) {
             //Anything before 9.5, last being 7.1 I think. Not worth checking otherwise.
