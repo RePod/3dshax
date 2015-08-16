@@ -23,9 +23,6 @@ body { background-color:#0084ff; }
 .btn { color:#767676; min-width:200px; text-align:left; display:block; }
 .btn > span, #gallery div span { display:inline-block; vertical-align:top; padding:0px 5px; }
 
-#gallery div { margin:5px 3px; }
-#gallery div span { vertical-align: middle; }
-
 .name {
     font-weight:bold;
 }
@@ -48,3 +45,20 @@ body { background-color:#0084ff; }
     border-color:#00D400 !important;
     background-color:#00D400 !important;
 }
+
+/*
+
+    Homebrew gallery.
+
+*/
+
+#gallery div { margin:5px 3px; }
+#gallery div span { vertical-align: middle; }
+
+/*
+
+    Etc.
+
+*/
+
+.method { display: none; }
