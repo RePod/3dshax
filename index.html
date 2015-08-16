@@ -9,6 +9,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta charset="utf-8">
 
+        <!-- Self-hosting -->
+        <link rel="stylesheet" href="bootstrap.min.css" />
+        <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+        <script type="text/javascript" src="js/jquery-ui-1.11.2.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap-3.3.2.min.js"></script>
+
         <!-- CSS -->
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" />
         <link rel="stylesheet" href="bootstrap.css" />
@@ -22,9 +28,9 @@
     <body>
         <div class="container">
             <div class="row">
-                <div class="col-lg-2 col-md-1 col-sm-0 col-xs-0"></div>
-                <div class="col-lg-3 col-md-4 col-sm-5" id="menu_hold" style="text-align:center">
-                    <img id="hb_menu" class="img-responsive" src='images/top_blank.png' alt="The Homebrew Launcher" />
+                <div class="col-lg-2 col-md-1 col-sm-0 col-xs-0"></div> <!-- horrible centering -->
+                <div class="col-lg-3 col-md-4 col-sm-5" id="menu_hold" style="text-align:center"> <!-- start left (2nd) column -->
+                    <a id="m_main" href="#main"><img id="hb_menu" class="img-responsive" src='images/top_blank.png' alt="The Homebrew Launcher" /></a>
                     <div id="menu" class="btn-group-vertical" role="group" aria-label="...">
                         <a id="m_cubic" href="#cubic" type="button" class="btn btn-default">
                             <img src="//i.imgur.com/IK6CQhC.png" alt="Cubic Ninja" />
@@ -67,29 +73,60 @@
                             </span>
                         </a>
                     </div>
-                </div>
-                <div class="col-lg-5 col-md-6 col-sm-7">
-                    <div class="panel panel-body">
-                        Something could go here.<br>
-                        <br>
-                        Either the site breaks off into multiple pages (easy) or functions on one page and swaps out content via javascript (flexible, jQuery).<br>
-                        <br>
-                        We're already using Bootstrap which degrades as intended in the 3DS' browser.<br>
-                        <br>
-                        Something could go here.<br>
-                        <br>
-                        Either the site breaks off into multiple pages (easy) or functions on one page and swaps out content via javascript (flexible, jQuery).<br>
-                        <br>
-                        We're already using Bootstrap which degrades as intended in the 3DS' browser.<br>
-                        <br>
-                        Something could go here.<br>
-                        <br>
-                        Either the site breaks off into multiple pages (easy) or functions on one page and swaps out content via javascript (flexible, jQuery).<br>
-                        <br>
-                        We're already using Bootstrap which degrades as intended in the 3DS' browser.<br>
+                </div> <!-- end left (2nd) column -->
+                <div class="col-lg-5 col-md-6 col-sm-7"> <!-- start right (3rd) column -->
+                    <div id="main"> <!-- Main body, hidden upon selection. -->
+                        <div class="panel panel-body">
+                            Welcome to the official 3DS Homebrew Launcher website!<br>
+                            <br>
+                            This page is meant to be a hub between all the best and newest ways to get homebrew running on your system.<br>
+                            <br>
+                            If viewed from a 3DS, suggested homebrew methods will be highlighted.
+                        </div>
+                        <div class="panel panel-body">
+                            <h4>What is homebrew?</h4>
+                            Homebrew is what we call unofficial software made by amateur developers for closed systems such as the 3DS. This includes both games and applications, and in practice getting homebrew on your 3DS means you'll be able to:<br>
+                            <div id="gallery">
+                                <div>
+                                    <img src="http://i.imgur.com/mPkFzQ6.png" alt="Region Free" /> <span>Play physical games from other regions.</span>
+                                </div>
+                                <div>
+                                    <img src="http://i.imgur.com/2U6Moku.png" alt="Aperture Science 3D" /> <span>Play Aperture Science 3D:<br>A free adaptation of Portal for the 3DS.</span>
+                                </div>
+                                <div>
+                                    <img src="http://i.imgur.com/82uII0X.png" alt="blargSNES" /> <span>Play old SNES games with blargSNES.</span>
+                                </div>
+                                <div>
+                                    <img src="" alt="Custom themes" /><span>Make and use custom home menu themes.</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-body">
+                            <h4>How do I get homebrew running on my console?</h4>
+                            Getting homebrew on your 3DS has never been easier!<br>
+                            <br>
+                            All you need is one or more of the titles listed and a bit of patience.<br>
+                            <br>
+                            Select a title for more information and instructions.
+                        </div>
+                    </div> <!-- end main body -->
+                    <div id="cubic" class="panel panel-body method">
+                        Cubicular
                     </div>
-                </div>
-                <div class="col-lg-2 col-md-1 col-sm-0 col-xs-0"></div>
+                    <div id="cubic2" class="panel panel-body method">
+                        Cubicular: Reloaded
+                    </div>
+                    <div id="ocarina" class="panel panel-body method">
+                        ...
+                    </div>
+                    <div id="ironfall" class="panel panel-body method">
+                        Invasion.
+                    </div>
+                    <div id="youtube" class="panel panel-body method">
+                        Homebrew Yourself™.
+                    </div>
+                </div> <!-- end right (3rd) column -->
+                <div class="col-lg-2 col-md-1 col-sm-0 col-xs-0"></div> <!-- horrible centering -->
             </div>
         </div>
     </body>

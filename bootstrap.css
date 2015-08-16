@@ -11,14 +11,20 @@ body { background-color:#0084ff; }
 #hb_menu { max-width:100%; margin-bottom:5px; display:inline-block; }
 
 #menu { width:100%; }
-#menu img {
+#menu img, #gallery img {
     display:inline-block;
     border:3px solid #e1e1e1;
     background-color: #e1e1e1;
     border-radius:6px;
+    width:48px;
+    height:48px;
+    overflow: hidden;
 }
 .btn { color:#767676; min-width:200px; text-align:left; display:block; }
-.btn > span { display:inline-block; vertical-align:top; padding:0px 5px; }
+.btn > span, #gallery div span { display:inline-block; vertical-align:top; padding:0px 5px; }
+
+#gallery div { margin:5px 3px; }
+#gallery div span { vertical-align: middle; }
 
 .name {
     font-weight:bold;
